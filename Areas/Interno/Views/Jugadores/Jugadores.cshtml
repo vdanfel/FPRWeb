@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_LayoutInterno";
+}
+<div class="container">
+    <div class="row mt-2 g-2">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+            <div class="form-floating">
+                <select class="form-select" id="equipo">
+                    <option value="0">Seleccione Equipo</option>
+                    <option value="1">Los Tigres</option>
+                    <option value="2">Guerreros Z</option>
+                    <option value="3">Las Aguilas</option>
+                </select>
+                <label for="equipo">Seleccione Equipo</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="form-floating">
+                <select class="form-select" id="categoria">
+                    <option value="0">Seleccione Categoria</option>
+                    <option value="1">M16</option>
+                    <option value="2">M18</option>
+                    <option value="3">Femenino</option>
+                </select>
+                <label for="categoria">seleccione Categoria</label>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2 g-2">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="form-floating">
+                <input class="form-control" id="apePaterno" placeholder="Apellido Paterno"/>
+                <label for="apePaterno">Ape.Paterno</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="form-floating">
+                <input class="form-control" id="apeMaterno" placeholder="Apellido Materno"/>
+                <label for="apeMaterno">Ape.Materno</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-6">
+            <div class="form-floating">
+                <input class="form-control" id="nombres" placeholder="Nombres"/>
+                <label for="nombres">Nombres</label>
+            </div>
+        </div>
+    </div>
+</div>
