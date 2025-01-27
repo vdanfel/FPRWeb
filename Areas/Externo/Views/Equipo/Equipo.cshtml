@@ -4,4 +4,29 @@
 @{
     Layout = "_LayoutExterno";
 }
-aqui es para usuarios externos
+<div class="container">
+    <div class="row g-2">
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" id="nombreClub" class="form-control" placeholder="Nombre del Club"/>
+                <label for="nombreClub">Nombre del Club</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="form-floating">
+                <input type="text" id="siglas" class="form-control" placeholder="Siglas del Club" />
+                <label for="siglas">Siglas del Club</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="form-floating">
+                <input type="file" class="form-control" id="logo" />
+                <label for="logo">Seleccionar Logo</label>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
