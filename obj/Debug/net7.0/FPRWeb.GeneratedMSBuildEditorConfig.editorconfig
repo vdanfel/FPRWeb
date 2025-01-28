@@ -9,45 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FPRWeb
 build_property.RootNamespace = FPRWeb
-build_property.ProjectDir = E:\FPRWeb\
+build_property.ProjectDir = D:\Desarrollos\FPRWeb\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\FPRWeb
+build_property.MSBuildProjectDirectory = D:\Desarrollos\FPRWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/FPRWeb/Areas/Externo/Views/Equipo/Equipo.cshtml]
+[D:/Desarrollos/FPRWeb/Areas/Externo/Views/Equipo/Equipo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXh0ZXJub1xWaWV3c1xFcXVpcG9cRXF1aXBvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/FPRWeb/Areas/Interno/Views/Jugadores/Jugadores.cshtml]
+[D:/Desarrollos/FPRWeb/Areas/Interno/Views/Jugadores/Jugadores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW50ZXJub1xWaWV3c1xKdWdhZG9yZXNcSnVnYWRvcmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/FPRWeb/Views/Login/Login.cshtml]
+[D:/Desarrollos/FPRWeb/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/FPRWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Desarrollos/FPRWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/FPRWeb/Views/_ViewImports.cshtml]
+[D:/Desarrollos/FPRWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/FPRWeb/Views/_ViewStart.cshtml]
+[D:/Desarrollos/FPRWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/FPRWeb/Areas/Externo/Views/Shared/_LayoutExterno.cshtml]
+[D:/Desarrollos/FPRWeb/Areas/Externo/Views/Shared/_LayoutExterno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXh0ZXJub1xWaWV3c1xTaGFyZWRcX0xheW91dEV4dGVybm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-86gi8f9gs9
 
-[E:/FPRWeb/Areas/Interno/Views/Shared/_LayoutInterno.cshtml]
+[D:/Desarrollos/FPRWeb/Areas/Interno/Views/Shared/_LayoutInterno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW50ZXJub1xWaWV3c1xTaGFyZWRcX0xheW91dEludGVybm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pwc7qkxdhk
 
-[E:/FPRWeb/Views/Shared/_Layout.cshtml]
+[D:/Desarrollos/FPRWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e8la1q9z5o

@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\Desarrollos\\FPRWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\areas\\externo\\views\\equipo\\equipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:areas\\externo\\views\\equipo\\equipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\areas\\externo\\service\\equiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:areas\\externo\\service\\equiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\areas\\externo\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:areas\\externo\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\areas\\externo\\interface\\iequiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:areas\\externo\\interface\\iequiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\areas\\interno\\service\\jugadoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:areas\\interno\\service\\jugadoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\areas\\interno\\interface\\ijugadoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:areas\\interno\\interface\\ijugadoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|d:\\desarrollos\\fprweb\\areas\\externo\\views\\equipo\\equipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8626EF2-EDB4-4438-A561-E85EA732FBDE}|FPRWeb.csproj|solutionrelative:areas\\externo\\views\\equipo\\equipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +42,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Desarrollos\\FPRWeb\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Desarrollos\\FPRWeb\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-27T20:06:13.509Z",
+              "DocumentIndex": 4,
+              "Title": "IJugadoresService.cs",
+              "DocumentMoniker": "D:\\Desarrollos\\FPRWeb\\Areas\\Interno\\Interface\\IJugadoresService.cs",
+              "RelativeDocumentMoniker": "Areas\\Interno\\Interface\\IJugadoresService.cs",
+              "ToolTip": "D:\\Desarrollos\\FPRWeb\\Areas\\Interno\\Interface\\IJugadoresService.cs",
+              "RelativeToolTip": "Areas\\Interno\\Interface\\IJugadoresService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T19:49:04.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JugadoresService.cs",
+              "DocumentMoniker": "D:\\Desarrollos\\FPRWeb\\Areas\\Interno\\Service\\JugadoresService.cs",
+              "RelativeDocumentMoniker": "Areas\\Interno\\Service\\JugadoresService.cs",
+              "ToolTip": "D:\\Desarrollos\\FPRWeb\\Areas\\Interno\\Service\\JugadoresService.cs",
+              "RelativeToolTip": "Areas\\Interno\\Service\\JugadoresService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T19:48:44.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEquipoService.cs",
+              "DocumentMoniker": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Interface\\IEquipoService.cs",
+              "RelativeDocumentMoniker": "Areas\\Externo\\Interface\\IEquipoService.cs",
+              "ToolTip": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Interface\\IEquipoService.cs",
+              "RelativeToolTip": "Areas\\Externo\\Interface\\IEquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:08:23.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EquipoService.cs",
+              "DocumentMoniker": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Service\\EquipoService.cs",
+              "RelativeDocumentMoniker": "Areas\\Externo\\Service\\EquipoService.cs",
+              "ToolTip": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Service\\EquipoService.cs",
+              "RelativeToolTip": "Areas\\Externo\\Service\\EquipoService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvxcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:08:05.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EquipoController.cs",
+              "DocumentMoniker": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Controllers\\EquipoController.cs",
+              "RelativeDocumentMoniker": "Areas\\Externo\\Controllers\\EquipoController.cs",
+              "ToolTip": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Controllers\\EquipoController.cs",
+              "RelativeToolTip": "Areas\\Externo\\Controllers\\EquipoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:06:43.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Equipo.cshtml",
               "DocumentMoniker": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Views\\Equipo\\Equipo.cshtml",
               "RelativeDocumentMoniker": "Areas\\Externo\\Views\\Equipo\\Equipo.cshtml",
               "ToolTip": "D:\\Desarrollos\\FPRWeb\\Areas\\Externo\\Views\\Equipo\\Equipo.cshtml",
               "RelativeToolTip": "Areas\\Externo\\Views\\Equipo\\Equipo.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-27T19:37:26.485Z",
               "EditorCaption": ""
