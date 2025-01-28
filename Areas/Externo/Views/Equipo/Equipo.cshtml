@@ -1,6 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model FPRWeb.Areas.Externo.Models.EquipoViewModel
 @{
     Layout = "_LayoutExterno";
 }
@@ -8,20 +6,217 @@
     <div class="row g-2">
         <div class="col-12">
             <div class="form-floating">
-                <input type="text" id="nombreClub" class="form-control" placeholder="Nombre del Club"/>
+                <input type="text" id="nombreClub" class="form-control" placeholder="Nombre del Club" asp-for="@Model.Nombre"/>
                 <label for="nombreClub">Nombre del Club</label>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6">
             <div class="form-floating">
-                <input type="text" id="siglas" class="form-control" placeholder="Siglas del Club" />
+                <input type="text" id="siglas" class="form-control" placeholder="Siglas del Club" asp-for="@Model.Siglas"/>
                 <label for="siglas">Siglas del Club</label>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6">
+            <div class="container-input">
+                <input type="file" name="file-1" id="file-1" class="inputfile inputfile-1" asp-for="@Model.RutaLogo" />
+                <label for="file-1">
+                    <div class="label-text">Ruta Logo</div>
+                    <span class="iborrainputfile">Seleccionar Logo</span>
+                </label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
             <div class="form-floating">
-                <input type="file" class="form-control" id="logo" />
-                <label for="logo">Seleccionar Logo</label>
+                <input type="text" id="ruc" class="form-control" placeholder="RUC" asp-for="@Model.RUC" />
+                <label for="rub">RUC</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+            <div class="form-floating">
+                <input type="text" id="razonSocial" class="form-control" placeholder="Razón Social" asp-for="@Model.RazonSocial" />
+                <label for="razonSocial">Razón Social</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" id="representanteLegal" class="form-control" placeholder="Representante Legal" asp-for="@Model.RepresentanteLegal" />
+                <label for="representanteLegal">Representante Legal</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" id="usuarioAdministrativo" class="form-control" placeholder="Usuario Administrativo" asp-for="@Model.UsuarioAdministrativo" />
+                <label for="usuarioAdministrativo">Usuario Administrativo</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" id="contacto" class="form-control" placeholder="Contacto" asp-for="@Model.Contacto" />
+                <label for="contacto">Contacto</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" id="lugarEntrenamiento" class="form-control" placeholder="Lugar de Entrenamiento" asp-for="@Model.LugarEntrenamiento" />
+                <label for="lugarEntrenamiento">Lugar de Entrenamiento</label>
+            </div>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="row g-2 mt-2 mx-2">
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row row-cols-3 g-2">
+                    <div class="col d-flex align-items-center">
+                        <div class="form-check form-switch ms-0 ms-sm-0 ms-md-0 ms-lg-4">
+                            <input type="checkbox" class="form-check-input" asp-for="@Model.Horarios.Lunes"/>
+                            <label>Lunes</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Lunes_HI" />
+                            <label>Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Lunes_HF" />
+                            <label>Fin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row row-cols-3 g-2">
+                    <div class="col d-flex align-items-center">
+                        <div class="form-check form-switch ms-0 ms-sm-0 ms-md-0 ms-lg-4">
+                            <input type="checkbox" class="form-check-input" asp-for="@Model.Horarios.Martes" />
+                            <label>Martes</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Martes_HI" />
+                            <label>Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Martes_HF" />
+                            <label>Fin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row row-cols-3 g-2">
+                    <div class="col d-flex align-items-center">
+                        <div class="form-check form-switch ms-0 ms-sm-0 ms-md-0 ms-lg-4">
+                            <input type="checkbox" class="form-check-input" asp-for="@Model.Horarios.Miercoles" />
+                            <label>Miércoles</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Miercoles_HI" />
+                            <label>Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Miercoles_HF" />
+                            <label>Fin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row row-cols-3 g-2">
+                    <div class="col d-flex align-items-center">
+                        <div class="form-check form-switch ms-0 ms-sm-0 ms-md-0 ms-lg-4">
+                            <input type="checkbox" class="form-check-input" asp-for="@Model.Horarios.Jueves" />
+                            <label>Jueves</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Jueves_HI" />
+                            <label>Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Jueves_HF" />
+                            <label>Fin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row row-cols-3 g-2">
+                    <div class="col d-flex align-items-center">
+                        <div class="form-check form-switch ms-0 ms-sm-0 ms-md-0 ms-lg-4">
+                            <input type="checkbox" class="form-check-input" asp-for="@Model.Horarios.Viernes" />
+                            <label>Viernes</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Viernes_HI" />
+                            <label>Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Viernes_HF" />
+                            <label>Fin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row row-cols-3 g-2">
+                    <div class="col d-flex align-items-center">
+                        <div class="form-check form-switch ms-0 ms-sm-0 ms-md-0 ms-lg-4">
+                            <input type="checkbox" class="form-check-input" asp-for="@Model.Horarios.Sabado" />
+                            <label>Sábado</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Sabado_HI" />
+                            <label>Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Sabado_HF" />
+                            <label>Fin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 mb-2">
+                <div class="row row-cols-3 g-2">
+                    <div class="col d-flex align-items-center">
+                        <div class="form-check form-switch ms-0 ms-sm-0 ms-md-0 ms-lg-4">
+                            <input type="checkbox" class="form-check-input" asp-for="@Model.Horarios.Domingo" />
+                            <label>Domingo</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Domingo_HI" />
+                            <label>Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" asp-for="@Model.Horarios.Domingo_HF" />
+                            <label>Fin</label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -30,3 +225,30 @@
     <partial name="_ValidationScriptsPartial" />
 }
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+    'use strict';
+    (function (document, window, index) {
+        var inputs = document.querySelectorAll('.inputfile');
+        Array.prototype.forEach.call(inputs, function (input) {
+            var label = input.nextElementSibling,
+                labelVal = label.querySelector('.iborrainputfile').innerHTML;
+
+            input.addEventListener('change', function (e) {
+                var fileName = '';
+                if (this.files && this.files.length > 1)
+                    fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                else
+                    fileName = e.target.value.split('\\').pop();
+
+                if (fileName) {
+                    label.querySelector('.iborrainputfile').innerHTML = fileName;
+                    input.closest('.container-input').classList.add('has-file');
+                } else {
+                    label.querySelector('.iborrainputfile').innerHTML = labelVal;
+                    input.closest('.container-input').classList.remove('has-file');
+                }
+            });
+        });
+    }(document, window, 0));
+</script>

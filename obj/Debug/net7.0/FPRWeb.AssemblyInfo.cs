@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FPRWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a3ef27759e7aedc5336531e05c1d4d3b43bcaea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FPRWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FPRWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
