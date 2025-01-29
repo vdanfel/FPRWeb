@@ -10,6 +10,6 @@ namespace FPRWeb.Areas.Interno.Service
         { 
             _connection = connection;
         }
-        public async Task<int> Persona_Insertar(JugadoresService)
+        //public async Task<int> Persona_Insertar(JugadoresService)
     }
 }

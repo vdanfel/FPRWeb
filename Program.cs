@@ -1,46 +1,42 @@
+using FPRWeb.Areas.Externo.Interface;
+using FPRWeb.Areas.Externo.Service;
 using FPRWeb.Interface.Login;
 using FPRWeb.Service.Login;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Data.SqlClient;
 
 AppContext.SetSwitch("Microsoft.Data.SqlClient.DisablePerformanceCounters", true);
 AppContext.SetSwitch("SqlClient.DisableRetrying", true);
 AppContext.SetSwitch("Microsoft.Data.SqlClient.EnableRetryLogic", false);
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// **Agregar autenticación con cookies**
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login/Login"; // Redirige al login si no está autenticado
+        options.AccessDeniedPath = "/Login/AccesoDenegado"; // Página de acceso denegado
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Expiración de la cookie
+    });
+
+builder.Services.AddAuthorization();
+
+// Agregar controladores con vistas
 builder.Services.AddControllersWithViews();
 
-// Asegúrate de que LoginService y SqlConnection estén registrados correctamente
+// Registrar LoginService y SqlConnection
 builder.Services.AddScoped<ILoginService, LoginService>();
-
-// Configurar SqlConnection con un ciclo de vida adecuado
+builder.Services.AddScoped<IEquipoService,EquipoService>();
 builder.Services.AddScoped<SqlConnection>(sp =>
 {
     var connectionString = builder.Configuration.GetConnectionString("FPRConnection");
     return new SqlConnection(connectionString);
 });
-builder.Services.AddSession(options =>
-{
-    // Configura las opciones de la sesión según tus necesidades
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-    options.Cookie.HttpOnly = true;
-});
+
 var app = builder.Build();
 
-app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-// Luego tus rutas específicas
-app.MapControllerRoute(
-    name: "externo",
-    pattern: "Externo/{controller=Equipo}/{action=Equipo}/{id?}");
-
-app.MapControllerRoute(
-    name: "interno",
-    pattern: "Interno/{controller=Jugadores}/{action=Jugadores}/{id?}");
-
-// Configure the HTTP request pipeline.
+// Configurar Middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Login/Login");
@@ -49,11 +45,25 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
+
+// **Agregar autenticación y autorización**
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseSession();
+
+// Configurar rutas de áreas
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "externo",
+    pattern: "Externo/{controller=Equipo}/{action=Equipo}/{id?}");
+
+app.MapControllerRoute(
+    name: "interno",
+    pattern: "Interno/{controller=Jugadores}/{action=Jugadores}/{id?}");
+
 // Ruta por defecto
 app.MapControllerRoute(
     name: "default",
